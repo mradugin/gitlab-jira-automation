@@ -1,0 +1,23 @@
+{%- if data.author_is_the_only_codeowner %}
+You are the only code owner of the files modified :astonished:
+
+Please find someone who might be interested in reviewing changes:
+ - your team lead
+ - developers from your or other teams
+
+You may also ask the reviewer to become code co-owner, if agreed - update CODEOWNERS file.
+{%- else %}
+{%- set codeowner_count = data.codeowners | list | count %}
+{%- if codeowner_count > 0 %}
+Based on changes done consider including following code owners as reviewers:
+{%- for codeowner in data.codeowners %}
+ - {{ codeowner }}
+{%- endfor %}
+{%- else %}
+Can't suggest reviewers for changes done :shrug:, but you can:
+- If you are adding new files, make yourself a code owner in CODEOWNERS file
+- Use git blame feature to find initial author of the code or last person who modified it
+
+You may also ask the reviewer to become code co-owner, if agreed - update CODEOWNERS file.
+{%- endif %}
+{%- endif %}

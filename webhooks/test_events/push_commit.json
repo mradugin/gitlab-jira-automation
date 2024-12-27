@@ -1,0 +1,64 @@
+{
+    "object_kind": "push",
+    "event_name": "push",
+    "before": "dbc25c3b9b95ab13314d325e3ab4d75e310f4f47",
+    "after": "4f11667de7c7589ec350f028805955b87b1c13b3",
+    "ref": "refs/heads/main",
+    "ref_protected": true,
+    "checkout_sha": "4f11667de7c7589ec350f028805955b87b1c13b3",
+    "message": null,
+    "user_id": 2,
+    "user_name": "Maksims Radugins",
+    "user_username": "maksims.radugins",
+    "user_email": "",
+    "user_avatar": "https://gitlab.yourcompany.com/uploads/-/system/user/avatar/2/avatar.png",
+    "project_id": 193,
+    "project": {
+        "id": 193,
+        "name": "GitLab Robot Webhooks",
+        "description": "GitLab robot to automate boring tasks",
+        "web_url": "https://gitlab.yourcompany.com/test/gitlab-robot/webhooks",
+        "avatar_url": null,
+        "git_ssh_url": "ssh://git@gitlab.yourcompany.com:22/test/gitlab-robot/webhooks.git",
+        "git_http_url": "https://gitlab.yourcompany.com/test/gitlab-robot/webhooks.git",
+        "namespace": "GitLab Robot",
+        "visibility_level": 0,
+        "path_with_namespace": "test/gitlab-robot/webhooks",
+        "default_branch": "main",
+        "ci_config_path": "",
+        "homepage": "https://gitlab.yourcompany.com/test/gitlab-robot/webhooks",
+        "url": "ssh://git@gitlab.yourcompany.com:22/test/gitlab-robot/webhooks.git",
+        "ssh_url": "ssh://git@gitlab.yourcompany.com:22/test/gitlab-robot/webhooks.git",
+        "http_url": "https://gitlab.yourcompany.com/test/gitlab-robot/webhooks.git"
+    },
+    "commits": [
+        {
+            "id": "4f11667de7c7589ec350f028805955b87b1c13b3",
+            "message": "EI-117 Update webhooks to use latest jira transition names\n",
+            "title": "EI-117 Update webhooks to use latest jira transition names",
+            "timestamp": "2024-02-26T23:59:09+02:00",
+            "url": "https://gitlab.yourcompany.com/test/gitlab-robot/webhooks/-/commit/028805955b87b1c13b3",
+            "author": {
+                "name": "Maksims Radugins",
+                "email": "user@yourcompany.com"
+            },
+            "added": [],
+            "modified": [
+                "webhooks/app/gitlab_webhooks.py",
+                "webhooks/app/jira_update.py"
+            ],
+            "removed": []
+        }
+    ],
+    "total_commits_count": 1,
+    "push_options": {},
+    "repository": {
+        "name": "GitLab Robot Webhooks",
+        "url": "ssh://git@gitlab.yourcompany.com:22/test/gitlab-robot/webhooks.git",
+        "description": "GitLab robot to automate boring tasks",
+        "homepage": "https://gitlab.yourcompany.com/test/gitlab-robot/webhooks",
+        "git_http_url": "https://gitlab.yourcompany.com/test/gitlab-robot/webhooks.git",
+        "git_ssh_url": "ssh://git@gitlab.yourcompany.com:22/test/gitlab-robot/webhooks.git",
+        "visibility_level": 0
+    }
+}

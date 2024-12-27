@@ -1,0 +1,29 @@
+{
+    "merge-request": {
+        "review-checklist": {
+            "enabled-projects": ["test/test"],
+            "remote-file": ".gitlab-robot/review-checklist.md",
+            "file": "../resources/review-checklist.md",
+            "target-branches": ["main", "master"]
+        },
+        "reviewer-suggestion": {
+            "enabled-projects": ["test/test"], 
+            "remote-file": ".gitlab-robot/reviewer-suggestion.jinja",
+            "file": "../resources/reviewer-suggestion.jinja",
+            "target-branches": ["main", "master"]
+        },
+        "jira-issue-transition": {
+            "open-statuses": ["Open", "Reopened"],
+            "in-progress-statuses": ["In Progress"],
+            "in-review-statuses": ["In Review", "Ready To Merge"],
+
+            "resolution-notes-field": "Resolution Notes",
+            "dev-resolution-field": "Dev Resolution",
+
+            "final-transition": "Request QA",
+            "start-progress-transition": "Start Progress On Push",
+            "start-review-transition": "Start Review",
+            "enabled-project-keys": ["JTP"]
+        }
+    }
+}
